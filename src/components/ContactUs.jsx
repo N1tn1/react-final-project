@@ -46,6 +46,7 @@ const ContactUs = () => {
                         type="email"
                         id="email"
                         name="email"
+                        placeholder="Email Address"
                         value={formData.email}
                         onChange={handleChange}
                         required
