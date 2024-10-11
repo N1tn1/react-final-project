@@ -40,7 +40,7 @@
   color: #888;
 }
 
-
+/* Base Styles */
 body{
   background-color: white;
   color: black;
@@ -51,9 +51,7 @@ body{
 h1{
   margin-bottom: 0px;
 }
-.todoBtn{
-  margin-top: 55px;
-}
+
 nav {
   display: flex;
   justify-content: flex-end;
@@ -95,11 +93,6 @@ nav span {
   padding: 0.5rem 1rem;
 }
 
-
-
-
-
-
 .home {
   
   padding: 20px;
@@ -135,8 +128,54 @@ nav span {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+  margin-top: 55px;
 }
 
 .todoBtn:hover {
   background-color: #0056b3;
 }
+
+/* Media Queries */
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  .todo-container {
+      padding: 10px;
+  }
+
+  h1 {
+      font-size: 24px;
+  }
+
+  .todo-list {
+      padding: 0;
+      list-style-type: none;
+  }
+
+  .addtodoForm {
+      flex-direction: column;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 481px) and (max-width: 768px) {
+  .todo-container {
+      padding: 15px;
+  }
+
+  h1 {
+      font-size: 28px;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 769px) {
+  .todo-container {
+      padding: 20px;
+  }
+
+  h1 {
+      font-size: 32px;
+  }
+}
+

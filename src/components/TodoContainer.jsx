@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import TodoList from './TodoList';
 import AddTodoForm from './AddTodoForm';
 import style from './styles/TodoContainer.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClipboard , faList } from '@fortawesome/free-solid-svg-icons';
 
 const TodoContainer = ({ tableName }) => {
     const [todoList, setTodoList] = useState([]);
@@ -148,7 +150,7 @@ const TodoContainer = ({ tableName }) => {
     return (
         <div className={style.todoContainer}>
             <div className={style.header}>
-                <h1> {tableName} </h1>
+                <h1 style={{color: '#5f1308'}}> <FontAwesomeIcon icon={faClipboard}/> {tableName} </h1>
             </div>
             <div className={style.addtodoForm}>
                 <AddTodoForm onAddTodo={addTodo} />

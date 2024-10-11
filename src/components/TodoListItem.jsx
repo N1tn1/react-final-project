@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import style from './styles/TodoListItem.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 const TodoListItem = ({ todo, onRemoveTodo, onToggleTodo }) => {
     return (
@@ -15,7 +17,7 @@ const TodoListItem = ({ todo, onRemoveTodo, onToggleTodo }) => {
                     {todo.title}
                 </span>
             </div>
-            <button className={style.rmvbtn} onClick={() => onRemoveTodo(todo.id)}> Remove </button>
+            <button className={style.rmvbtn} onClick={() => onRemoveTodo(todo.id)}> <FontAwesomeIcon icon={faTrash} /> </button>
         </li>
     
     );

@@ -41,19 +41,19 @@ Welcome to the Task Manager! This application helps you manage your tasks effici
 
 4. Set up your Airtable API
 
-Create an Airtable base and table to store your tasks.
+   Create an Airtable base and table to store your tasks.
 
 5. Create .env file in the root of the project
 
-Add your Airtable API token and base ID to your environment variables as follows:
+   Add your Airtable API token and base ID to your environment variables as follows:
 
-VITE_AIRTABLE_API_TOKEN
-VITE_AIRTABLE_BASE_ID
-VITE_TABLE_NAME
+  - VITE_AIRTABLE_API_TOKEN
+  - VITE_AIRTABLE_BASE_ID
+  - VITE_TABLE_NAME
 
 6. Start the application:
 
-`npm run dev`
+   `npm run dev`
 
 ## Usage
 
@@ -62,7 +62,7 @@ VITE_TABLE_NAME
 
 ## Contributing
 
-Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
+ Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
 
 1. Fork the repository.
 2. Create a new branch `git checkout -b feature/new-feature`
@@ -73,7 +73,7 @@ Contributions are welcome! If you'd like to contribute to the project, please fo
 
 ## License
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). See the LICENSE file for details.
+   This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). See the LICENSE file for details.
 
 ## Acknowledgments
 
